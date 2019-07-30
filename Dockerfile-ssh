@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.10.0
+FROM phusion/baseimage:0.11
 LABEL maintainer "Nazar Mokrynskyi <nazar@mokrynskyi.com>"
 
 COPY webserver-common /webserver-common/
@@ -11,7 +11,7 @@ RUN \
 	/webserver-common/apt-get-install-common.sh && \
 	/webserver-common/apt-get-install-ceph-fuse.sh && \
 
-	apt-get install -y --no-install-recommends git mc wget \
+	apt-get install -y --no-install-recommends git mc wget rsync \
 		php-cli \
 		php-curl \
 		php-bcmath \

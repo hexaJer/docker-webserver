@@ -1,4 +1,4 @@
-FROM mariadb:10.1
+FROM mariadb:10.4
 LABEL maintainer "Nazar Mokrynskyi <nazar@mokrynskyi.com>"
 
 COPY webserver-common /webserver-common/
