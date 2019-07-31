@@ -4,7 +4,6 @@ LABEL maintainer "Nazar Mokrynskyi <nazar@mokrynskyi.com>"
 COPY webserver-common /webserver-common/
 
 RUN \
-
 	/webserver-common/apt-get-update.sh && \
 	/webserver-common/apt-get-install-common.sh && \
 	/webserver-common/apt-get-cleanup.sh
@@ -15,7 +14,6 @@ VOLUME /var/lib/ceph
 
 ENV \
 	CONSUL_SERVICE=consul \
-
 	CLUSTER=ceph \
 	KV_TYPE=consul \
 	KV_IP=consul \
